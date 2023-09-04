@@ -1,0 +1,97 @@
+/* Container Styles */
+.employer-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color:azure; /* Light gray background */
+    color: azure;
+    padding: 170px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  form {
+    background-color:azure;; /* White background for forms */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333; /* Dark gray text for labels */
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    background-color: #8e65ee; /* Blue submit button */
+    color: #fbfbfb;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #eab140; /* Darker blue on hover */
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styles */
+  h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333; /* Dark gray text for headers */
+  }
+  
+  /* Additional Styles */
+  button {
+    background-color:rgb(135, 92, 236);/* Light gray button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #ccc; /* Slightly darker gray on hover */
+  }
+  
+  /* Error Message Styles */
+  .error-message {
+    color: #d9534f; /* Red error message text */
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .ONE{
+    background-color: azure;
+  }

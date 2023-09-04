@@ -1,0 +1,84 @@
+<div class="user-profile-container">
+    <h2>User Profile</h2>
+    <form (ngSubmit)="onSubmit()" #profileForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" [(ngModel)]="user.contact" required>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills:</label>
+        <p>To select multiple hold command/control button</p>
+        <select id="skills" name="skills" [(ngModel)]="user.skills" multiple required>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+<option value="java">Java</option>
+<option value="python">Python</option>
+<option value="csharp">C#</option>
+<option value="php">PHP</option>
+<option value="ruby">Ruby</option>
+<option value="swift">Swift</option>
+<option value="typescript">TypeScript</option>
+<option value="sql">SQL</option>
+<option value="html">HTML</option>
+<option value="css">CSS</option>
+<option value="react">React</option>
+<option value="angular">Angular</option>
+<option value="vue">Vue.js</option>
+<option value="nodejs">Node.js</option>
+<option value="express">Express.js</option>
+<option value="django">Django</option>
+<option value="flask">Flask</option>
+<option value="laravel">Laravel</option>
+<option value="spring">Spring Framework</option>
+<option value="wordpress">WordPress</option>
+<option value="rubyonrails">Ruby on Rails</option>
+<option value="redux">Redux</option>
+<option value="graphql">GraphQL</option>
+<option value="mongodb">MongoDB</option>
+<option value="mysql">MySQL</option>
+<option value="postgresql">PostgreSQL</option>
+<option value="firebase">Firebase</option>
+<option value="aws">Amazon Web Services (AWS)</option>
+<option value="azure">Microsoft Azure</option>
+<option value="docker">Docker</option>
+<option value="kubernetes">Kubernetes</option>
+<option value="git">Git</option>
+<option value="jenkins">Jenkins</option>
+<option value="ansible">Ansible</option>
+<option value="terraform">Terraform</option>
+<option value="elastic">Elasticsearch</option>
+<option value="kafka">Apache Kafka</option>
+<option value="rabbitmq">RabbitMQ</option>
+<option value="nginx">Nginx</option>
+<option value="apache">Apache HTTP Server</option>
+<option value="json">JSON</option>
+<option value="xml">XML</option>
+
+</select>
+      </div>
+      <div class="form-group">
+        <label for="gitProfile">GitHub Profile:</label>
+        <input type="text" id="gitProfile" name="gitProfile" [(ngModel)]="user.gitProfile" required>
+        <div *ngIf="profileForm.controls['gitProfile'].invalid && (profileForm.controls['gitProfile'].dirty || profileForm.controls['gitProfile'].touched)">
+          <div *ngIf="profileForm.controls['gitProfile'].hasError('required')">GitHub Profile is required.</div>
+        </div>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+<br><br>
+    <div class="github-projects" *ngIf="githubProjects.length > 0">
+        <h3>GitHub Projects:</h3>
+        <ol>
+          <li *ngFor="let project of githubProjects">
+            <a [href]="project.html_url" target="_blank">{{ project.name }}</a>
+            <p>{{ project.description }}</p>
+          </li>
+        </ol>
+      </div>
+  </div>
+  

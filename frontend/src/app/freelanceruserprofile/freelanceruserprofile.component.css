@@ -1,0 +1,82 @@
+/* User Profile Container */
+.user-profile-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 200px;
+    background-color:azure;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headers */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Input Fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Checkbox Group */
+  .mat-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Checkbox Styles */
+  .mat-checkbox {
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .mat-checkbox:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* GitHub Projects List */
+  .project-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Save Button */
+  button {
+    background-color: #0070c9;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056a0;
+    transform: translateY(-2px);
+  }
+  

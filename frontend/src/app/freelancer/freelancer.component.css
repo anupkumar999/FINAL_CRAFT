@@ -1,0 +1,41 @@
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    max-width: 2300px;
+    color:azure;
+    
+  }
+  
+  /* Buttons */
+  .button-container button {
+    background-color: #7899e6;
+    color: #040404;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 200px;
+    margin-top: 200px;
+   
+  }
+  
+  .button-container button:hover {
+    background-color: #93d5e7;
+    transform: translateY(-2px);
+  }
+  
+  /* Add a subtle gradient background */
+  .button-container {
+  background-color: azure;
+    margin-top: 0%;
+    padding-bottom: 500px;
+    padding-top: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

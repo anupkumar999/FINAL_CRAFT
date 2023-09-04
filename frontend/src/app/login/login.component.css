@@ -1,0 +1,74 @@
+
+/* CSS for the login page */
+body {
+  font-family: Arial, sans-serif;
+  background-color:azure;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color:azure;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ padding-top: 300px;
+  padding-left: 600px;
+  padding-right: 1000px;
+  padding-bottom: 400px;
+  margin: top 0;
+  margin-left: 0px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 1px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add media queries for responsiveness as needed */
+@media (max-width: 768px) {
+  .login-container {
+    margin: 0 20px;
+  }
+}

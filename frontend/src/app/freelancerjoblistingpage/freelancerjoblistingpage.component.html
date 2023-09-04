@@ -1,0 +1,25 @@
+<div class="employer-container">
+    <h2>My Posted Jobs</h2>
+    <div class="search-bar">
+        <label class="hey"> MIN.SALARY/SKILLS :</label> 
+        <input type="text" class="search" placeholder=" " [(ngModel)]="searchQuery" (input)="searchExpeditions()"/>    </div>
+    <ul>
+
+      <li *ngFor="let job of filteredExpeditionInfo" class="job-item">
+        <div class="job-header">
+          <h2>{{ job.title }}</h2>
+          <!-- <span class="applications-count">{{ job.applicationsCount }} Applications</span> -->
+        </div>
+        <div class="job-details">
+          <p><strong>Description:</strong> {{ job.jobdescription }}</p>
+          <p><strong>Company Name:</strong> {{ job.companyname }}</p>
+          <p><strong>Tags:</strong> {{ job.tags }}</p>
+          <p><strong>Employer Name:</strong> {{ job.employername }}</p>
+          <p><strong>Employer Email:</strong> {{ job.employeremail }}</p>
+          <p><strong>Requirements:</strong> {{ job.requirements }}</p>
+          <p><strong>Salary:</strong> {{ job.salary }}</p>
+        </div>
+        <button class="view-applicants-button" (click)="viewApplicants(job)">QUICK APPLY</button>
+      </li>
+    </ul>
+</div>

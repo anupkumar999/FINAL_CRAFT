@@ -1,0 +1,38 @@
+/* CSS for the home page */
+.home-container {
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Position the container relative for absolute positioning */
+    margin-top: 250px;
+  }
+  
+  /* Logout button at the top-right corner */
+  .logout-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 10px; /* Adjust the top value for vertical positioning */
+    right: 10px; /* Adjust the right value for horizontal positioning */
+  }
+  
+  /* Other buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
